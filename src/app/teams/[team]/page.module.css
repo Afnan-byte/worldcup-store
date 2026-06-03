@@ -1,0 +1,56 @@
+.banner {
+  background: var(--primary);
+  padding: 4rem 1.5rem;
+  text-align: center;
+  border-bottom: 4px solid var(--secondary);
+}
+
+.teamName {
+  font-size: 3rem;
+  color: var(--accent);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.collection {
+  padding: 4rem 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}

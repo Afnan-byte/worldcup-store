@@ -1,0 +1,180 @@
+.container {
+  padding: 4rem 1.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cartItem {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--cards);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  align-items: center;
+}
+
+.itemImageWrapper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.itemTeam {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.itemPrice {
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.itemActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #ff4d4f;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.removeBtn:hover {
+  opacity: 0.8;
+}
+
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.quantityBtn {
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--accent);
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.quantityBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.quantityValue {
+  width: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.summary {
+  background: var(--cards);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  height: fit-content;
+}
+
+.summaryTitle {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.couponForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.couponInput {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cartItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .itemActions {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}

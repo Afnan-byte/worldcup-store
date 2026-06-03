@@ -1,0 +1,114 @@
+.container {
+  padding: 4rem 1.5rem;
+  max-width: 1000px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+}
+
+.formSection {
+  background: var(--cards);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--secondary);
+}
+
+.paymentMethods {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.paymentMethod {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paymentMethod:hover, .paymentMethod.active {
+  border-color: var(--secondary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.paymentMethod input {
+  accent-color: var(--secondary);
+}
+
+.summary {
+  background: var(--cards);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  height: fit-content;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}

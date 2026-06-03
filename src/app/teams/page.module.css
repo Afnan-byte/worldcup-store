@@ -1,0 +1,38 @@
+.teamsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 4rem 1.5rem;
+}
+
+.teamCard {
+  background: var(--cards);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.teamCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary);
+  background: var(--cards-hover);
+}
+
+.flagPlaceholder {
+  width: 80px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.teamName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+}
